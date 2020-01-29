@@ -75,7 +75,7 @@ public class WeatherForecastServiceImpl implements WeatherForecastService {
 
     for (DailyForecast dailyForecast : dailyForecastsFiltered) {
       String userTip = (dailyForecast.getWeather().get(0).getMain().equals("Rain"))
-          ? "Carry umberlla"
+          ? "Carry umbrella"
           : "Carry Sunscreen";
 
       WeatherResponse weatherResponse = new WeatherResponse();
